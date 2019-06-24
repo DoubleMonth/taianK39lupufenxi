@@ -41,7 +41,7 @@ for row_x = 1: excelRow - 1
         mid_value_2 = asind(gpsElevationDiffe/(speedSum/2*samplingTime/3600*1000)); 
         if isreal(mid_value_2)                                              
             podu = tand(mid_value_2);
-            value(row_x,1) = podu *100;                                       %写入矩阵中
+            value(row_x,1) =podu*100;                                       %写入矩阵中
         else
             value(row_x,1) = value(row_x-1,1);                         %%出现复数时认为数据出错，使用上一个数据填充
         end
